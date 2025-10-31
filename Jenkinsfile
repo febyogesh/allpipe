@@ -8,7 +8,8 @@ pipeline {
         }
         stage("clean up ") {
             steps {
-                bat 'docker rm -f $(docker ps -aq)'
+                bat 'for /f "tokens=*" %i in ('docker ps -aq') do docker rm -f %i
+'
             }
         }
        
