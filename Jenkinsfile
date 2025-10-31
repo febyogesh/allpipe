@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage("checkout Code") {
             steps {
-                git url:'https://github.com/sibeshpatel9490/avdapp.git', branch:'main'
+                git url:'https://github.com/febyogesh/allpipe.git', branch:'main'
             }
         }
        
