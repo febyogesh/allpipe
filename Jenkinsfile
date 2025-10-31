@@ -6,11 +6,11 @@ pipeline {
                 git url:'https://github.com/febyogesh/allpipe.git', branch:'main'
             }
         }
-        stage("clean up ") {
-            steps {
-                bat 'docker rm -f ${docker ps -aq}'
-            }
-        }
+        // stage("clean up ") {
+        //     steps {
+        //         bat 'docker rm -f ${docker ps -aq}'
+        //     }
+        // }
        
         stage("Build Docker image") {
             steps {
